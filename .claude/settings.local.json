@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Workflow(deep-research)",
+      "Skill(deep-research)",
+      "WebSearch",
+      "WebFetch(domain:www.google.com)",
+      "Skill(claude-api)",
+      "Bash(python -m py_compile main.py)",
+      "Bash(python *)",
+      "Bash(pip install *)"
+    ]
+  }
+}
