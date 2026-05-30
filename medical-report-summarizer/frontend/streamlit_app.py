@@ -45,11 +45,11 @@ if uploaded_file is not None:
                     st.success("Analysis complete!")
                     
                     # Summary
-                    st.subheader("📋 Summary")
+                    st.subheader("Summary")
                     st.write(result.get("summary", "No summary available"))
                     
                     # Action Items
-                    st.subheader("✅ Action Items (What needs to be done)")
+                    st.subheader("Action Items (What needs to be done)")
                     action_items = result.get("action_items", [])
                     if action_items:
                         for item in action_items:
@@ -58,7 +58,7 @@ if uploaded_file is not None:
                         st.write("- No specific action items identified")
                     
                     # Deficiencies
-                    st.subheader("⚠️ Deficiencies (What the body lacks)")
+                    st.subheader("Deficiencies (What the body lacks)")
                     deficiencies = result.get("deficiencies", [])
                     if deficiencies:
                         for item in deficiencies:

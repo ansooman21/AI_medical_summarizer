@@ -17,8 +17,10 @@ class MedicalReportSummarizer:
             self.model = None
         else:
             genai.configure(api_key=self.api_key)
-            # Using Gemini Pro for good balance of quality and speed
-            self.model = genai.GenerativeModel('gemini-pro')
+
+            self.model = genai.GenerativeModel(
+                "gemini-2.5-flash"
+            )
     
     def summarize_report(self, text: str) -> Dict[str, List[str]]:
         """
